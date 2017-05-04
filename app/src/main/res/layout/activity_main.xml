@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context="example.hans.simpleformandroid.MainActivity">
+
+    <TextView
+        android:id="@+id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name :"
+        android:textSize="20sp"
+        android:layout_marginTop="36dp"
+        />
+    <EditText
+        android:id="@+id/inputName"
+        android:hint="Input Your name"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/nameTxt"
+        android:layout_toEndOf="@+id/nameTxt"
+        />
+    <TextView
+        android:id="@+id/ageTxt"
+        android:layout_below="@id/nameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age :"
+        android:textSize="20sp"
+        android:layout_marginTop="26dp"
+        />
+    <EditText
+        android:id="@+id/inputAge"
+        android:inputType="numberDecimal"
+        android:hint="Input Your age"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/ageTxt"
+        android:layout_toEndOf="@+id/ageTxt"
+        />
+    <TextView
+        android:id="@+id/emailTxt"
+        android:layout_below="@id/ageTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email :"
+        android:textSize="20sp"
+        android:layout_marginTop="26dp"
+        />
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/inputEmail"
+        android:hint="Input Your email"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/emailTxt"
+        android:layout_toEndOf="@+id/emailTxt"
+        />
+    <TextView
+        android:id="@+id/pwdTxt"
+        android:layout_below="@id/emailTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password :"
+        android:textSize="20sp"
+        android:layout_marginTop="26dp"
+        />
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/inputPassword"
+        android:hint="Input Your Password"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/pwdTxt"
+        android:layout_toEndOf="@+id/pwdTxt"
+        />
+    <TextView
+        android:id="@+id/conPwdTxt"
+        android:layout_below="@id/pwdTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confrim Password  :"
+        android:textSize="20sp"
+        android:layout_marginTop="26dp"
+        />
+    <EditText
+        android:inputType="textPassword"
+        android:id="@+id/inputConPassword"
+        android:hint="Confirm Your Password"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/conPwdTxt"
+        android:layout_toEndOf="@id/conPwdTxt"
+        />
+    <Button
+        android:id="@+id/submitBtn"
+        android:text="Submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/inputName" />
+    <Button
+        android:id="@+id/resetBtn"
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/inputPassword" />
+
+</RelativeLayout>
